@@ -170,3 +170,15 @@ $(document).ready(function() {
 }
 counterInit();
 });
+
+document.getElementById('checkbox').addEventListener('change', function () {
+  if (this.checked) {
+    document.querySelector('.circle .square').style.transform = 'scale(0)';
+
+    setTimeout(() => {
+      document.getElementById('downloadLink').click();
+    }, 800); // Delay to sync with the animation
+  } else {
+    document.querySelector('.circle .square').style.transform = 'scale(1)';
+  }
+});
