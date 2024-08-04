@@ -87,6 +87,12 @@
           transition: all .3s ease;
 }
 
+@media (max-width: 767px) {
+  .summary-peek {
+    text-align: center;
+  }
+}
+
 .main-menu .menu-link .icon {
   display: block;
   font-size: 28px;
@@ -829,6 +835,12 @@ font-size: 40px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media(max-width: 767px) {
+  .down-container {
+    justify-content: center;
+  }
 }
 
 .label {
