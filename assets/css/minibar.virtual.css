@@ -1,6 +1,3 @@
-/*-----------------------------------*\
-|            General Preset           |
-\*-----------------------------------*/
 ::-webkit-scrollbar {
   width: 11px;
 }
@@ -25,7 +22,6 @@
   background-color: #2c2d34;
   color: #fff;
 }
-
 
 .topbar-nav h3 {
   display: inline-block;
@@ -431,11 +427,11 @@
 }
 
 .exp-details::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 20px;
   right: -40px;
-  background-color: #F4F5F8;
+  background-color: #f4f5f8;
   width: 100px;
   height: 60px;
   transform-origin: center;
@@ -736,7 +732,7 @@
 }
 .theme-blue .continue-application {
   --background: #1f4fd1;
-  --background-hover: #2C2D34;
+  --background-hover: #2c2d34;
   --background-left: #2960f7;
 }
 
@@ -782,7 +778,7 @@
 }
 .theme-green .continue-application {
   --background: #6e9d31;
-  --background-hover: #2C2D34;
+  --background-hover: #2c2d34;
   --background-left: #8cc63f;
 }
 
@@ -828,7 +824,7 @@
 }
 .theme-orange .continue-application {
   --background: #c66618;
-  --background-hover: #2C2D34;
+  --background-hover: #2c2d34;
   --background-left: #fd7e14;
 }
 
@@ -874,7 +870,7 @@
 }
 .theme-purple .continue-application {
   --background: #4a2d80;
-  --background-hover: #2C2D34;
+  --background-hover: #2c2d34;
   --background-left: #6f42c1;
 }
 
@@ -1095,27 +1091,22 @@
   }
 }
 
-
-
-
-
-
-/* From Uiverse.io by Nawsome */ 
+/* From Uiverse.io by Nawsome */
 .continue-application {
   --color: #fff;
-  --background: #2C2D34;
-  --background-hover: #2C2D34;
-  --background-left: #EF3724;
-  --folder: #2C2D34;
+  --background: #2c2d34;
+  --background-hover: #2c2d34;
+  --background-left: #ef3724;
+  --folder: #2c2d34;
   --folder-inner: #686869;
-  --paper: #FFFFFF;
-  --paper-lines: #BBC1E1;
-  --paper-behind: #E1E6F9;
+  --paper: #ffffff;
+  --paper-lines: #bbc1e1;
+  --paper-behind: #e1e6f9;
   --pencil-cap: #fff;
-  --pencil-top: #2C2D34;
+  --pencil-top: #2c2d34;
   --pencil-middle: #fff;
-  --pencil-bottom: #2C2D34;
-  --shadow: rgba(13, 15, 25, .2);
+  --pencil-bottom: #2c2d34;
+  --shadow: rgba(13, 15, 25, 0.2);
   border: none;
   outline: none;
   cursor: pointer;
@@ -1175,7 +1166,8 @@
   transform: perspective(120px) rotateY(var(--fr, 0deg));
 }
 
-.continue-application > div .folder:before, .continue-application > div .folder:after,
+.continue-application > div .folder:before,
+.continue-application > div .folder:after,
 .continue-application > div .folder .paper {
   content: "";
   position: absolute;
@@ -1188,7 +1180,8 @@
 }
 
 .continue-application > div .folder:before {
-  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow),
+    0 3.5px 7px var(--shadow);
   transform: translateX(var(--fx, 0));
   transition: transform 0.4s ease var(--fd, 0.3s);
 }
@@ -1212,7 +1205,8 @@
   --b: var(--paper);
 }
 
-.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+.continue-application > div .folder .paper:before,
+.continue-application > div .folder .paper:after {
   content: "";
   width: var(--wp, 14px);
   height: 2px;
@@ -1244,11 +1238,20 @@
   transition: transform 0.4s ease var(--pbd, 0s);
 }
 
-.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+.continue-application > div .pencil:before,
+.continue-application > div .pencil:after {
   content: "";
   position: absolute;
   display: block;
-  background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+  background: var(
+    --b,
+    linear-gradient(
+      var(--pencil-top) 55%,
+      var(--pencil-middle) 55.1%,
+      var(--pencil-middle) 60%,
+      var(--pencil-bottom) 60.1%
+    )
+  );
   width: var(--w, 5px);
   height: var(--h, 20px);
   border-radius: var(--br, 2px 2px 0 0);
@@ -1272,7 +1275,8 @@
   border-right: 1px solid var(--pencil-top);
 }
 
-.continue-application:before, .continue-application:after {
+.continue-application:before,
+.continue-application:after {
   content: "";
   position: absolute;
   width: 10px;
@@ -1295,10 +1299,10 @@
   --bg: var(--background-hover);
   --fx: -40px;
   --fr: -60deg;
-  --fd: .15s;
+  --fd: 0.15s;
   --fds: 0s;
   --pbx: 3px;
   --pby: -3px;
-  --pbd: .15s;
+  --pbd: 0.15s;
   --pex: -24px;
 }
